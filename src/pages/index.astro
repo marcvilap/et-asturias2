@@ -1,0 +1,122 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '$layouts/Layout.astro'
+import BlockInfo from '$components/BlockInfo.astro'
+import SvgLogoAsturias from '$assets/icons/logo-asturias.svg'
+import SvgLogoAsturias2 from '$assets/icons/logo-asturias-2.svg'
+import SvgTrain from '$assets/icons/train.svg'
+import videoHero from '$assets/videos/hero.webm'
+import img01 from '$assets/images/01.webp'
+import img02 from '$assets/images/02.webp'
+import img03 from '$assets/images/03.webp'
+import img04 from '$assets/images/04.webp'
+import imgBg from '$assets/images/bg.png'
+---
+
+<Layout>
+	<section class="reveal group relative bg-black text-white">
+		<video class="absolute size-full object-cover" src={videoHero} autoplay loop muted playsinline></video>
+		<span class="absolute inset-0 bg-gradient-to-b from-fuchsia-300/20 to-green-950/80"></span>
+		<div class="relative container flex min-h-screen flex-col gap-8 py-16">
+			<a class="flex items-center gap-2 self-start text-xs text-green-950" href="/">
+				<span><strong>Asturias en flor</strong><br />Un proyecto de</span>
+				<SvgLogoAsturias class="w-14" />
+			</a>
+			<div class="my-auto max-w-xl font-bold">
+				<h1 class="text-5xl">
+					<span class="inline-block overflow-clip">
+						<span class="group-reveal:translate-y-full block">Un horizonte de pétalos</span>
+					</span>
+					<span class="inline-block overflow-clip">
+						<span class="group-reveal:translate-y-full group-revealed:delay-200 block">en blanco y rosa:</span>
+					</span>
+				</h1>
+				<h2 class="mt-6 overflow-clip text-2xl">
+					<span class="group-reveal:translate-y-full group-revealed:delay-400 block">El inicio del ciclo de la sidra asturiana</span>
+				</h2>
+			</div>
+			<p class="max-w-md self-end overflow-clip">
+				<span class="group-reveal:translate-y-full group-revealed:delay-600 block">Asturias, Paraíso Natural, se tiñe ahora de blanco bajo el manto de los pétalos del manzano, que comienza su floración con la llegada de la primavera. Esto solo puede significar una cosa: ¡arranca el ciclo de la sidra!</span>
+			</p>
+		</div>
+	</section>
+
+	<section class="view-railway relative overflow-clip">
+		<div class="sticky top-0 -z-1 h-0 lg:ml-[40%]">
+			<Image class="w-full" src={imgBg} width={1152} alt="" />
+		</div>
+
+		<BlockInfo image={img01}>
+			<p class="text-2xl font-semibold text-black">Son muchos los motivos por los que los asturianos se sienten orgullosos de su tierra, pero hay uno que, además, ha sido reconocido como Patrimonio Cultural Inmaterial de la Humanidad (PCIH) por la UNESCO: la sidra.</p>
+			<p class="text-2xl font-semibold text-black">Con la llegada del buen tiempo, se inicia el proceso anual que sigue la producción de esta bebida tan emblemática del norte, desde la floración del manzano hasta el consumo de la sidra ya fermentada. Del uno al diez, ¿cuánto dirías que sabes acerca de este proceso?</p>
+		</BlockInfo>
+
+		<BlockInfo image={img02}>
+			<h2 class="mb-6 text-3xl font-semibold text-black">Faraones, monjes y Cristóbal Colón</h2>
+			<p>¿Sabías que la sidra tiene su orígen hace miles de años? Aunque los primeros registros que tenemos son de la Edad Media, ya en la época de los egipcios y romanos existían bebidas fermentadas a base de frutas. En la historia de la sidra, los monjes medievales tuvieron un papel crucial al ser quienes perfeccionaron el proceso de fermentación.</p>
+			<p>La sidra empezó a ganar mayor fama cuando se puso de moda entre los campesinos y marineros, porque era más segura de beber que el propio agua y, además, se podía conservar en buen estado durante mucho tiempo.</p>
+			<p>¿Te suena la palabra “escorbuto”? Es la enfermedad que sufrían la mayoría de marineros cuando llevaban tiempo embarcados sin acceso a frutas y verduras frescas. Al ser una bebida resultante de la fermentación de la manzana, la sidra tiene un alto contenido en vitamina C, por eso los marineros la llevaban en barricas durante sus viajes para evitar caer enfermos en la travesía.</p>
+			<p class="mt-12 text-3xl font-bold text-green-700 xl:px-12">En la historia de la sidra, los monjes medievales tuvieron un papel crucial al ser quienes perfeccionaron el proceso de fermentación.</p>
+		</BlockInfo>
+
+		<BlockInfo image={img03}>
+			<h2 class="mb-6 text-3xl font-semibold text-black">Asturias no fue por casualidad</h2>
+			<p>Si la sidra se consume en tantas regiones, ¿por qué es tan característica de Asturias?</p>
+			<p>La respuesta a esta pregunta se remonta, inicialmente, al hecho de que Asturias tiene el clima y el suelo que más le gustan al manzano (alrededor de 10 millones de ellos echan raíces actualmente en tierra astur).</p>
+			<p>El consumo de sidra nació de forma natural en el Principado como producto autóctono y se quedó integrado en la cultura asturiana como algo muy suyo: tanto, que el arte del escanciado no es solamente un paso para oxigenar la sidra antes de beberla, sino un ritual social único que aúna a familiares y amigos en los llamados chigres (sidrerías) y que ha sido reconocido de manera internacional.</p>
+			<p>Lo cierto es que no hace falta ser manzano para saber apreciar las bondades de este verdadero Paraíso Natural, donde lo mejor del mar se disfruta desde las increíbles playas que bordean la costa y lo mejor de la montaña se puede vivir desde la perspectiva del senderismo, en piragua o, simplemente, disfrutando de la gastronomía y las fiestas únicas que caracterizan esta tierra que ahora está cubierta en flor.</p>
+			<p class="mt-12 text-3xl font-bold text-green-700 xl:px-12">El consumo de sidra nació de forma natural en el Principado como producto autóctono y se quedó integrado en la cultura asturiana como algo muy suyo.</p>
+		</BlockInfo>
+
+		<BlockInfo image={img04}>
+			<h2 class="mb-6 text-3xl font-semibold text-black">En primera persona con el AVE al paraíso</h2>
+			<p>En primavera, la naturaleza despierta: los manzanos florecen entre abril y mayo para dar paso a los polinizadores. Pero, en realidad, cualquier momento es bueno para visitar Asturias, que ya contaba con 31 conexiones aéreas directas y, a ello, acaba de sumar un AVE que supone la única conexión ferroviaria de alta velocidad de toda la fachada cantábrica. Madrid-Asturias en apenas tres horas (menos aún desde Valladolid) en un viaje en tren sencillo, económico (hay posibilidad de contratar servicio AVLO de bajo coste) y sostenible.</p>
+			<p>Tienes Asturias (los manzanos en flor, la sidra y todo lo demás) más cerca que nunca. Aquí va la última pregunta: ¿a qué estás esperando?</p>
+		</BlockInfo>
+
+		<div class="bg-railway absolute inset-y-0 z-10 w-6 max-lg:right-0 lg:left-2/5">
+			<span class="absolute inset-y-0 right-full w-6 bg-gradient-to-r from-transparent to-black/25"></span>
+
+			<div class="sticky top-0 -mx-1 h-screen">
+				<div class="animate-train relative">
+					<span class="absolute -inset-2 -z-1 rounded-full bg-black/25 blur"></span>
+					<SvgTrain />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-green-950 text-center text-white">
+		<div class="container py-12 lg:py-24">
+			<p>ElTiempo Content para</p>
+			<SvgLogoAsturias2 class="mx-auto mt-4 w-48" />
+		</div>
+	</footer>
+</Layout>
+
+<style is:global>
+	@supports (animation-timeline: view()) {
+		@keyframes animate-train {
+			from {
+				transform: translateY(-100%);
+			}
+			to {
+				transform: translateY(100vh);
+			}
+		}
+		.view-railway {
+			view-timeline: --view-railway;
+		}
+		.animate-train {
+			animation: animate-train linear both;
+			animation-timeline: --view-railway;
+			animation-range: entry contain;
+		}
+	}
+
+	@supports not (animation-timeline: view()) {
+		.animate-train {
+			transform: translateY(6rem);
+		}
+	}
+</style>
