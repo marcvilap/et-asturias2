@@ -2,8 +2,8 @@
 import { Image } from 'astro:assets'
 import Layout from '$layouts/Layout.astro'
 import BlockInfo from '$components/BlockInfo.astro'
-import SvgLogoAsturias from '$assets/icons/logo-asturias.svg'
-import SvgLogoAsturias2 from '$assets/icons/logo-asturias-2.svg'
+import SvgLogoAsturias from '$assets/icons/logo-asturias.png'
+import SvgLogoAsturias2 from '$assets/icons/logo-asturias-2.png'
 import SvgTrain from '$assets/icons/train.svg'
 import videoHero from '$assets/videos/hero.webm'
 import img01 from '$assets/images/01.webp'
@@ -20,7 +20,7 @@ import imgBg from '$assets/images/bg.png'
 		<div class="relative container flex min-h-screen flex-col gap-8 py-16">
 			<a class="flex items-center gap-2 self-start text-xs text-green-950" href="/">
 				<span><strong>Asturias en flor</strong><br />Un proyecto de</span>
-				<SvgLogoAsturias class="w-14" />
+				<Image class="ml-2 w-[10rem]" src={SvgLogoAsturias} alt="" />
 			</a>
 			<div class="my-auto max-w-xl font-bold">
 				<h1 class="text-5xl">
@@ -36,7 +36,7 @@ import imgBg from '$assets/images/bg.png'
 				</h2>
 			</div>
 			<p class="max-w-md self-end overflow-clip">
-				<span class="group-reveal:translate-y-full group-revealed:delay-600 block">Asturias, Paraíso Natural, se tiñe ahora de blanco bajo el manto de los pétalos del manzano, que comienza su floración con la llegada de la primavera. Esto solo puede significar una cosa: ¡arranca el ciclo de la sidra!</span>
+				<span class="group-reveal:translate-y-full group-revealed:delay-600 block"> <a href="https://www.turismoasturias.es/ " class="font-bold underline" target="_blank" rel="sponsored">Asturias, Paraíso Natural,</a> se tiñe ahora de blanco bajo el manto de los pétalos del manzano, que comienza su floración con la llegada de la primavera. Esto solo puede significar una cosa: ¡arranca el ciclo de la sidra!</span>
 			</p>
 		</div>
 	</section>
@@ -47,7 +47,7 @@ import imgBg from '$assets/images/bg.png'
 		</div>
 
 		<BlockInfo image={img01}>
-			<p class="text-2xl font-semibold text-black">Son muchos los motivos por los que los asturianos se sienten orgullosos de su tierra, pero hay uno que, además, ha sido reconocido como Patrimonio Cultural Inmaterial de la Humanidad (PCIH) por la UNESCO: la sidra.</p>
+			<p class="text-2xl font-semibold text-black">Son muchos los motivos por los que los asturianos se sienten orgullosos de su tierra, pero hay uno que, además, ha sido reconocido como Patrimonio Cultural Inmaterial de la Humanidad (PCIH) por la UNESCO: la Cultura Sidrera.</p>
 			<p class="text-2xl font-semibold text-black">Con la llegada del buen tiempo, se inicia el proceso anual que sigue la producción de esta bebida tan emblemática del norte, desde la floración del manzano hasta el consumo de la sidra ya fermentada. Del uno al diez, ¿cuánto dirías que sabes acerca de este proceso?</p>
 		</BlockInfo>
 
@@ -64,13 +64,13 @@ import imgBg from '$assets/images/bg.png'
 			<p>Si la sidra se consume en tantas regiones, ¿por qué es tan característica de Asturias?</p>
 			<p>La respuesta a esta pregunta se remonta, inicialmente, al hecho de que Asturias tiene el clima y el suelo que más le gustan al manzano (alrededor de 10 millones de ellos echan raíces actualmente en tierra astur).</p>
 			<p>El consumo de sidra nació de forma natural en el Principado como producto autóctono y se quedó integrado en la cultura asturiana como algo muy suyo: tanto, que el arte del escanciado no es solamente un paso para oxigenar la sidra antes de beberla, sino un ritual social único que aúna a familiares y amigos en los llamados chigres (sidrerías) y que ha sido reconocido de manera internacional.</p>
-			<p>Lo cierto es que no hace falta ser manzano para saber apreciar las bondades de este verdadero Paraíso Natural, donde lo mejor del mar se disfruta desde las increíbles playas que bordean la costa y lo mejor de la montaña se puede vivir desde la perspectiva del senderismo, en piragua o, simplemente, disfrutando de la gastronomía y las fiestas únicas que caracterizan esta tierra que ahora está cubierta en flor.</p>
+			<p>Lo cierto es que no hace falta ser manzano para saber apreciar las bondades de este verdadero <a href="https://www.turismoasturias.es/ " class="font-bold underline" target="_blank" rel="sponsored">Paraíso Natural,</a> donde lo mejor del mar se disfruta desde las increíbles playas que bordean la costa y lo mejor de la montaña se puede vivir desde la perspectiva del senderismo, en piragua o, simplemente, disfrutando de la gastronomía y las fiestas únicas que caracterizan esta tierra que ahora está cubierta en flor.</p>
 			<p class="mt-12 text-3xl font-bold text-green-700 xl:px-12">El consumo de sidra nació de forma natural en el Principado como producto autóctono y se quedó integrado en la cultura asturiana como algo muy suyo.</p>
 		</BlockInfo>
 
 		<BlockInfo image={img04}>
 			<h2 class="mb-6 text-3xl font-semibold text-black">En primera persona con el AVE al paraíso</h2>
-			<p>En primavera, la naturaleza despierta: los manzanos florecen entre abril y mayo para dar paso a los polinizadores. Pero, en realidad, cualquier momento es bueno para visitar Asturias, que ya contaba con 31 conexiones aéreas directas y, a ello, acaba de sumar un AVE que supone la única conexión ferroviaria de alta velocidad de toda la fachada cantábrica. Madrid-Asturias en apenas tres horas (menos aún desde Valladolid) en un viaje en tren sencillo, económico (hay posibilidad de contratar servicio AVLO de bajo coste) y sostenible.</p>
+			<p>En primavera, la naturaleza despierta: los manzanos florecen entre abril y mayo para dar paso a los polinizadores. Pero, en realidad, cualquier momento es bueno para <a href="https://www.turismoasturias.es/ " class="font-bold underline" target="_blank" rel="sponsored">visitar Asturias,</a> que ya contaba con 31 conexiones aéreas directas y, a ello, acaba de sumar un AVE que supone la única conexión ferroviaria de alta velocidad de toda la fachada cantábrica. Madrid-Asturias en apenas tres horas (menos aún desde Valladolid) en un viaje en tren sencillo, económico (hay posibilidad de contratar servicio AVLO de bajo coste) y sostenible.</p>
 			<p>Tienes Asturias (los manzanos en flor, la sidra y todo lo demás) más cerca que nunca. Aquí va la última pregunta: ¿a qué estás esperando?</p>
 		</BlockInfo>
 
@@ -89,7 +89,7 @@ import imgBg from '$assets/images/bg.png'
 	<footer class="bg-green-950 text-center text-white">
 		<div class="container py-12 lg:py-24">
 			<p>ElTiempo Content para</p>
-			<SvgLogoAsturias2 class="mx-auto mt-4 w-48" />
+			<Image class="m-auto mt-4 w-[10rem]" src={SvgLogoAsturias2} alt="" />
 		</div>
 	</footer>
 </Layout>
